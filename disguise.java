@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class disguise extends Actor
+public class Disguise extends Actor
 {
     /**
      * Act - do whatever the disguise wants to do. This method is called whenever
