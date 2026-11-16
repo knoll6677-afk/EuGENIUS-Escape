@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Eugene
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fan\ here.\r\n\ \r\n\ @author\ Eugene\ Kim\r\n\ @version\ 11.04.2026\r\n
+comment1.params=
+comment1.target=Eugene()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ fan\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=boolean\ getHasMoved()
+comment4.params=
+comment4.target=boolean\ getInvincibility()
+comment5.params=
+comment5.target=void\ handleMovement()
+comment6.params=
+comment6.target=boolean\ checkCollisions()
+comment7.params=disguise
+comment7.target=void\ equipDisguise(java.lang.String)
+comment8.params=
+comment8.target=void\ removeDisguise()
+numComments=9
