@@ -1,5 +1,4 @@
 #Greenfoot project file
-class.Eugene.image=man01.png
 dependency1.from=MyWorld
 dependency1.to=Eugene
 dependency1.type=UsesDependency
