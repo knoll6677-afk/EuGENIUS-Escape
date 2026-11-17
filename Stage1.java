@@ -15,5 +15,6 @@ public class Stage1 extends GameWorld
      */
     public Stage1()
     {
+        spawnPlayer();
     }
 }

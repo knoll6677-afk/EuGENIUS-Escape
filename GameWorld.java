@@ -19,8 +19,6 @@ public class GameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        Eugene eugene = new Eugene();
-        addObject(eugene, 300, 100);
     }
     
     public int getHearts()
@@ -58,5 +56,11 @@ public class GameWorld extends World
     public void triggerWin()
     {
         Greenfoot.setWorld(new Win());
+    }
+    
+    public void spawnPlayer()
+    {
+        Eugene eugene = new Eugene();
+        addObject(eugene, 300, 350);
     }
 }
