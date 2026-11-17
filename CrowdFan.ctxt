@@ -7,5 +7,5 @@ comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ CrowdFan\ wants\ to\ do.\ This\ m
 comment2.params=
 comment2.target=void\ swarmTowardsPlayer()
 comment3.params=
-comment3.target=boolean\ checkCollisions()
+comment3.target=int\ checkCollisions()
 numComments=4

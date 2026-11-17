@@ -10,6 +10,8 @@ public class CrowdFan extends Fan
 {
     private int driftDirection;
     private int changeDirTimer;
+    private int oldX;
+    private int oldY;
     
     /**
      * Act - do whatever the CrowdFan wants to do. This method is called whenever
@@ -18,18 +20,41 @@ public class CrowdFan extends Fan
     public void act()
     {
         swarmTowardsPlayer();
+        if (checkCollisions() == 2) {
+            setLocation(oldX, oldY);
+        }
     }
     
     public void swarmTowardsPlayer() {
+        int playerX = Eugene.getPlayerX();
+        int playerY = Eugene.getPlayerY();
+        
+        if (playerX > getX()) {
+            oldX = getX();
+            setLocation(getX()+1, getY());
+        } 
+        if (playerX < getX()) {
+            oldX = getX();
+            setLocation(getX()-1, getY());
+        }
+        if (playerY > getY()) {
+            oldY = getY();
+            setLocation(getX(), getY()+1);
+        } 
+        if (playerY < getY()) {
+            oldY = getY();
+            setLocation(getX(), getY()-1);
+        }
         
     }
     
-    public boolean checkCollisions() {
-        if (isTouching(Eugene.class)) {
-            return true;
+    public int checkCollisions() {
+        if (getObjectsInRange(7, Eugene.class).size()>0) {
+            getWorld().removeObject(this);
+            return 1;
         } else if (isTouching(Barricade.class) || isTouching(MazeWall.class)) {
-            return true;
+            return 2;
         }
-        return false;
+        return 0;
     }
 }

@@ -46,39 +46,47 @@ public class Eugene extends Actor
         return isInvincible;
     }
     
+    public static int getPlayerX() {
+        return lastX;
+    }
+    
+    public static int getPlayerY() {
+        return lastY;
+    }
+    
     private void handleMovement() {
         if (Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("left")) {
             lastX = getX();
             setLocation(getX() - moveSpeed, getY());
-            if (checkCollisions()) {
+            if (checkCollisions() == 2) {
                 setLocation(getX()+5, getY());
             }
         }
         if (Greenfoot.isKeyDown("d") || Greenfoot.isKeyDown("right")) {
             lastX = getX();
             setLocation(getX() + moveSpeed, getY()); 
-            if (checkCollisions()) {
+            if (checkCollisions() == 2) {
                 setLocation(getX()-5, getY());
             }
         }
         if (Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up")) {
             lastY = getY();
             setLocation(getX(), getY() - moveSpeed); 
-            if (checkCollisions()) {
+            if (checkCollisions() == 2) {
                 setLocation(getX(), getY()+5);
             }
         }
         if (Greenfoot.isKeyDown("s") || Greenfoot.isKeyDown("down")) {
             lastY = getY();
             setLocation(getX(), getY() + moveSpeed);
-            if (checkCollisions()) {
+            if (checkCollisions() == 2) {
                 setLocation(getX(), getY()-5);
             }
         }
     }
     
-    public boolean checkCollisions() {
-        if (isTouching(Fan.class) || isTouching(Hilly.class)) {
+    public int checkCollisions() {
+        if (isTouching(CrowdFan.class) || isTouching(Hilly.class)) {
             isInvincible = true;
             if (currentTimer > 0) {
                 currentTimer--;
@@ -86,11 +94,11 @@ public class Eugene extends Actor
                 currentTimer = invincibilityTimer;
                 isInvincible = false;
             }
-            return true;
+            return 1;
         } else if (isTouching(Barricade.class) || isTouching(MazeWall.class)) {
-            return true;
+            return 2;
         }
-        return false;
+        return 0;
     }
     
     public boolean isTouchingKey() {
