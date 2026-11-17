@@ -18,7 +18,7 @@ public class Win extends GameWorld
     {
         super();
         
-        setBackground("win");
+        setBackground("win.jpg");
     }
     
     public void started()
