@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Win extends GameWorld
 {
 
-    private GreenfootSound bgMusic = new GreenfootSound("win.mp3");
+    //private GreenfootSound bgMusic = new GreenfootSound("win.mp3");
     /**
      * Constructor for objects of class Win.
      * 
@@ -23,21 +23,22 @@ public class Win extends GameWorld
     
     public void started()
     {
-        bgMusic.playLoop();
+        //bgMusic.playLoop();
     }
     
     public void stopped()
     {
-        bgMusic.stop();
+        //bgMusic.stop();
     }
     
     public void act()
     {
+        /*
         if (!bgMusic.isPlaying())
         {
             bgMusic.playLoop();
         }
-        
+        */
         inputAction();
     }
     
@@ -45,7 +46,7 @@ public class Win extends GameWorld
     {
         if (Greenfoot.isKeyDown("space"))
         {
-            bgMusic.stop();
+            //bgMusic.stop();
             Greenfoot.setWorld(new MainMenu());
         }
     }

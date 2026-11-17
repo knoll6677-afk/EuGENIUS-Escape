@@ -17,7 +17,9 @@ public class GameOver extends GameWorld
     {
         super();
         
-        setBackground("014");
+        GreenfootImage bg = new GreenfootImage("014.png");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
     }
     
     public void started()
