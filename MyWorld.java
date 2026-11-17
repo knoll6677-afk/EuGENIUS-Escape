@@ -19,6 +19,9 @@ public class MyWorld extends World
         super(600, 400, 1); 
         
         Eugene player = new Eugene();
+        CrowdFan a = new CrowdFan();
+        
         addObject(player, 200, 300);
+        addObject(a, 300, 300);
     }
 }
