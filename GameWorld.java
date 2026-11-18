@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GameWorld extends World
 {
 
-    private int hearts = 3;
+    private static int hearts = 3;
     private boolean hasKey = false;
     /**
      * Constructor for objects of class GameWorld.
@@ -19,6 +19,9 @@ public class GameWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        spawnPlayer();
+        addObject(new CrowdFan(), 100, 100);
+        addObject(new PatrolFan(), 400, 100);
     }
     
     public int getHearts()
@@ -43,7 +46,7 @@ public class GameWorld extends World
         }
     }
     
-    public void loseHearts()
+    public static void loseHearts()
     {
         hearts -= 1;
     }
