@@ -18,14 +18,10 @@ public class GameWorld extends World
     public GameWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-<<<<<<< HEAD
         super(1000, 700, 1); 
-=======
-        super(600, 400, 1); 
         spawnPlayer();
         addObject(new CrowdFan(), 100, 100);
         addObject(new PatrolFan(), 400, 100);
->>>>>>> c70ff7c44fb7da61cc6cfee689c08af90b481f93
     }
     
     public int getHearts()
