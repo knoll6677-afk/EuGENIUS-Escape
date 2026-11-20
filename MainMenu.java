@@ -16,12 +16,10 @@ public class MainMenu extends GameWorld
     public MainMenu()
     {
         super();
-        Button newGameButton = new Button("new_game");
-        Button continueButton = new Button("continue");
-        Button exitButton = new Button("exit");      
-        addObject(newGameButton, 300, 300);
-        addObject(continueButton, 300, 200);
-        addObject(exitButton, 300, 100);
+        Button start_button = new Button("new_game");
+        addObject(start_button, 479, 291);
+        Button exit_button = new Button("exit");
+        addObject(exit_button, 479, 437);
     }
     
     public void started()
