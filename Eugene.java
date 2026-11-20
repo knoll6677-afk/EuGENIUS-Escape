@@ -29,6 +29,7 @@ public class Eugene extends Actor
         currentDisguise = "None";
         lastX = 200;
         lastY = 300;
+        setImage("man01.png");
         //hurtSound = new GreenfootSound("background.mp3");
         //pickupSound = new GreenfootSound("background.mp3");
     }

@@ -8,10 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CrowdFan extends Fan
 {
-    private int driftDirection;
-    private int changeDirTimer;
     private int oldX;
     private int oldY;
+    
+    public CrowdFan() {
+        setImage("woman01.png");
+        baseSpeed = 1;
+    }
     
     /**
      * Act - do whatever the CrowdFan wants to do. This method is called whenever
@@ -31,30 +34,20 @@ public class CrowdFan extends Fan
         
         if (playerX > getX()) {
             oldX = getX();
-            setLocation(getX()+1, getY());
+            setLocation(getX()+baseSpeed, getY());
         } 
         if (playerX < getX()) {
             oldX = getX();
-            setLocation(getX()-1, getY());
+            setLocation(getX()-baseSpeed, getY());
         }
         if (playerY > getY()) {
             oldY = getY();
-            setLocation(getX(), getY()+1);
+            setLocation(getX(), getY()+baseSpeed);
         } 
         if (playerY < getY()) {
             oldY = getY();
-            setLocation(getX(), getY()-1);
+            setLocation(getX(), getY()-baseSpeed);
         }
         
-    }
-    
-    public int checkCollisions() {
-        if (getObjectsInRange(7, Eugene.class).size()>0) {
-            getWorld().removeObject(this);
-            return 1;
-        } else if (isTouching(Barricade.class) || isTouching(MazeWall.class)) {
-            return 2;
-        }
-        return 0;
     }
 }

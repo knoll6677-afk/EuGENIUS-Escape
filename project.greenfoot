@@ -1,57 +1,79 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.Stage1.image=01_spring_flower_festival.png
 class.Stage2.image=rooms-composed.png
+=======
+class.CrowdFan.image=woman01.png
+class.Eugene.image=man01.png
+>>>>>>> c70ff7c44fb7da61cc6cfee689c08af90b481f93
 dependency1.from=GameWorld
-dependency1.to=GameOver
+dependency1.to=CrowdFan
 dependency1.type=UsesDependency
-dependency10.from=Button
-dependency10.to=Stage1
+dependency10.from=CrowdFan
+dependency10.to=MazeWall
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 dependency11.from=Eugene
 dependency11.to=CrowdFan
+=======
+dependency11.from=Button
+dependency11.to=Stage1
+>>>>>>> c70ff7c44fb7da61cc6cfee689c08af90b481f93
 dependency11.type=UsesDependency
 dependency12.from=Eugene
-dependency12.to=Hilly
+dependency12.to=CrowdFan
 dependency12.type=UsesDependency
 dependency13.from=Eugene
-dependency13.to=Barricade
+dependency13.to=Hilly
 dependency13.type=UsesDependency
 dependency14.from=Eugene
-dependency14.to=MazeWall
+dependency14.to=Barricade
 dependency14.type=UsesDependency
 dependency15.from=Eugene
-dependency15.to=Key
+dependency15.to=MazeWall
 dependency15.type=UsesDependency
+dependency16.from=Eugene
+dependency16.to=Key
+dependency16.type=UsesDependency
 dependency2.from=GameWorld
-dependency2.to=Win
+dependency2.to=GameOver
 dependency2.type=UsesDependency
 dependency3.from=GameWorld
-dependency3.to=Eugene
+dependency3.to=Win
 dependency3.type=UsesDependency
-dependency4.from=GameOver
-dependency4.to=MainMenu
+dependency4.from=GameWorld
+dependency4.to=Eugene
 dependency4.type=UsesDependency
-dependency5.from=MainMenu
-dependency5.to=Button
+dependency5.from=GameOver
+dependency5.to=MainMenu
 dependency5.type=UsesDependency
-dependency6.from=Win
-dependency6.to=MainMenu
+dependency6.from=MainMenu
+dependency6.to=Button
 dependency6.type=UsesDependency
-dependency7.from=CrowdFan
-dependency7.to=Eugene
+dependency7.from=Win
+dependency7.to=MainMenu
 dependency7.type=UsesDependency
 dependency8.from=CrowdFan
-dependency8.to=Barricade
+dependency8.to=Eugene
 dependency8.type=UsesDependency
 dependency9.from=CrowdFan
-dependency9.to=MazeWall
+dependency9.to=Barricade
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1048
 editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
 height=1048
 package.numDependencies=15
+=======
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=24
+editor.fx.0.y=40
+height=551
+package.numDependencies=16
+>>>>>>> c70ff7c44fb7da61cc6cfee689c08af90b481f93
 package.numTargets=21
 project.charset=UTF-8
 publish.hasSource=false
@@ -215,7 +237,14 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.1.0
+<<<<<<< HEAD
 width=1936
 world.lastInstantiated=Stage3
 xPosition=0
 yPosition=0
+=======
+width=812
+world.lastInstantiated=GameWorld
+xPosition=668
+yPosition=139
+>>>>>>> c70ff7c44fb7da61cc6cfee689c08af90b481f93
