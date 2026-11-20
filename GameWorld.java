@@ -63,4 +63,9 @@ public class GameWorld extends World
         Eugene eugene = new Eugene();
         addObject(eugene, 300, 350);
     }
+    
+    public void spawnRoamingFan() {
+        RoamingFan testing = new RoamingFan();
+        addObject(testing, 600, 400);
+    }
 }
