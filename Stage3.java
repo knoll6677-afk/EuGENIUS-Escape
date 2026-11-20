@@ -15,5 +15,8 @@ public class Stage3 extends GameWorld
      */
     public Stage3()
     {
+        GreenfootImage bg = new GreenfootImage("casino.png");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
     }
 }

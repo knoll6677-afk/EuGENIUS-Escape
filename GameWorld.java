@@ -61,6 +61,6 @@ public class GameWorld extends World
     public void spawnPlayer()
     {
         Eugene eugene = new Eugene();
-        addObject(eugene, 300, 350);
+        addObject(eugene, 500, 600);
     }
 }
