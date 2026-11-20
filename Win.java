@@ -16,9 +16,9 @@ public class Win extends GameWorld
      */
     public Win()
     {
-        super();
-        
-        setBackground("win.jpg");
+        GreenfootImage bg = new GreenfootImage("win.jpg");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
     }
     
     public void started()

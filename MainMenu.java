@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MainMenu extends GameWorld
 {
-    private GreenfootSound bgMusic = new GreenfootSound("main_menu.mp3");  
+    //private GreenfootSound bgMusic = new GreenfootSound("main_menu.mp3");  
     /**
      * Constructor for objects of class MainMenu.
      * 
@@ -26,11 +26,11 @@ public class MainMenu extends GameWorld
     
     public void started()
     {
-        bgMusic.playLoop();
+        //bgMusic.playLoop();
     }
     
     public void stopped()
     {
-        bgMusic.stop();
+        //bgMusic.stop();
     }
 }

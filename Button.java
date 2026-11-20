@@ -31,7 +31,7 @@ public class Button extends Actor
         
         if (action.equals("exit"))
         {
-            setImage("exit.png");
+            setImage("exit_button.png");
         }
     }
     

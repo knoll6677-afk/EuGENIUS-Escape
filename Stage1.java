@@ -15,6 +15,9 @@ public class Stage1 extends GameWorld
      */
     public Stage1()
     {
+        GreenfootImage bg = new GreenfootImage("01_spring_flower_festival.png");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
         spawnPlayer();
     }
 }
