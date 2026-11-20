@@ -21,5 +21,6 @@ public class Stage1 extends GameWorld
         spawnPlayer();
         addObject(new CrowdFan(), 100, 100);
         addObject(new PatrolFan(), 400, 100);
+        addObject(new RoamingFan(), 600, 400);
     }
 }
