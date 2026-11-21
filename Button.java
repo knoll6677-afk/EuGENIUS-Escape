@@ -20,18 +20,33 @@ public class Button extends Actor
     {
         action = input;
         state = input;
+        image();
     }
     
     public void image()
     {
         if (action.equals("new_game"))
         {
-            setImage("new_game.png");
+            GreenfootImage buttonImg = new GreenfootImage("button_rectangle_depth_gloss_yellow.png");           
+            GreenfootImage textImg = new GreenfootImage("START", 48, Color.WHITE, new Color(0, 0, 0, 0));
+
+            int x = (buttonImg.getWidth() - textImg.getWidth()) / 2;
+            int y = (buttonImg.getHeight() - textImg.getHeight()) / 2;
+
+            buttonImg.drawImage(textImg, x, y);
+            setImage(buttonImg);
         }
         
         if (action.equals("exit"))
         {
-            setImage("exit.png");
+            GreenfootImage buttonImg = new GreenfootImage("button_rectangle_depth_gloss_blue.png");
+            GreenfootImage textImg = new GreenfootImage("EXIT", 48, Color.WHITE, new Color(0, 0, 0, 0));
+            
+            int x = (buttonImg.getWidth() - textImg.getWidth()) / 2;
+            int y = (buttonImg.getHeight() - textImg.getHeight()) / 2;
+            
+            buttonImg.drawImage(textImg, x, y);
+            setImage(buttonImg);
         }
     }
     

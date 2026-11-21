@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MainMenu extends GameWorld
 {
-    private GreenfootSound bgMusic = new GreenfootSound("main_menu.mp3");  
+    //private GreenfootSound bgMusic = new GreenfootSound("main_menu.mp3");  
     /**
      * Constructor for objects of class MainMenu.
      * 
@@ -16,21 +16,19 @@ public class MainMenu extends GameWorld
     public MainMenu()
     {
         super();
-        Button newGameButton = new Button("new_game");
-        Button continueButton = new Button("continue");
-        Button exitButton = new Button("exit");      
-        addObject(newGameButton, 300, 300);
-        addObject(continueButton, 300, 200);
-        addObject(exitButton, 300, 100);
+        Button start_button = new Button("new_game");
+        addObject(start_button, 498, 291);
+        Button exit_button = new Button("exit");
+        addObject(exit_button, 498, 437);
     }
     
     public void started()
     {
-        bgMusic.playLoop();
+        //bgMusic.playLoop();
     }
     
     public void stopped()
     {
-        bgMusic.stop();
+        //bgMusic.stop();
     }
 }

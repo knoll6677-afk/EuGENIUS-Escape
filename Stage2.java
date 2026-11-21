@@ -15,5 +15,8 @@ public class Stage2 extends GameWorld
      */
     public Stage2()
     {
+        GreenfootImage bg = new GreenfootImage("rooms-composed.png");
+        bg.scale(getWidth(), getHeight());
+        setBackground(bg);
     }
 }
